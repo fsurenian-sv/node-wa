@@ -1,0 +1,40 @@
+{
+	"env": {
+		"node": true,
+		"commonjs": true,
+		"es6": true
+	},
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"extends": [
+		"eslint:recommended",
+		"prettier"
+	],
+	"parseOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"prettier"
+	],
+	"rules": {
+		"prettier/prettier": [
+			2,
+			{
+				"printWidth": 100,
+				"tabWidth": 4,
+				"useTabs": true,
+				"semi": true,
+				"singleQuote": true,
+				"trailingComma": "all",
+				"bracketSpacing": true,
+				"jsxBracketSameLine": true,
+				"proseWrap": "allways",
+				"arrowParens": "avoid",
+				"endOfLine": "auto"
+			}
+		]
+	}
+}
