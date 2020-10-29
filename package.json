@@ -1,11 +1,12 @@
 {
 	"name": "node-wa",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "app.js",
 	"author": "Fernando Surenian <fernando.surenian@softvision.com>",
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
-		"start": "nodemon index.js",
+		"start": "nodemon app.js",
 		"test": "yarn jest",
 		"eslint": "eslint ."
 	},
