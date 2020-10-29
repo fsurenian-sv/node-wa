@@ -1,10 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
 
-const catchAll = (req, res) => res.send('UP AND RUNNING');
+dotenv.config();
+
+const healthCheck = (req, res) => res.status(200).json({ status: 'up and running' });
 
 const app = express();
 app.use(bodyParser.json());
-app.use(catchAll);
+app.use(healthCheck);
 
-app.listen(8080);
+app.listen(process.env.PORT);
