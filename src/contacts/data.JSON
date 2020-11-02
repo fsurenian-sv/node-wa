@@ -1,0 +1,23 @@
+[
+	{
+		"id": "1",
+		"name": "Dario Renzulli",
+		"alias": "Darren Zully",
+		"number": "1144445555",
+		"imageurl": "https://algunsitiodeimagenes/dario.png"
+	},
+	{
+		"id": "2",
+		"name": "Nicolás Danelon",
+		"alias": "Nicolás Canelon",
+		"number": "1144445555",
+		"imageurl": "https://algunsitiodeimagenes/nico.png"
+	},
+	{
+		"id": "3",
+		"name": "Fernando Surenian",
+		"alias": "Fernando S",
+		"number": "1144445555",
+		"imageurl": "https://algunsitiodeimagenes/fer.png"
+	}
+]
