@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import contactsRouter from './src/contacts/router.js';
 import messagesRouter from './src/messages/router.js';
+import callsRouter from './src/calls/router.js';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/contacts', contactsRouter);
 app.use('/messages', messagesRouter);
+app.use('/calls', callsRouter);
 app.use(healthCheck);
 
 app.listen(process.env.PORT);
