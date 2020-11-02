@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "24ab2cdb-f611-4d47-bde0-9291ebfb24b5",
+		"name": "NODE-WA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/contacts/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"contacts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/contacts/1",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/contacts/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"contacts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Alison Brown\",\r\n\t\"alias\": \"abrown\",\r\n\t\"number\": \"1154546564\",\r\n\t\"imgUrl\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/contacts/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"contacts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Contact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"name\": \"Nicolás Canelon\",\r\n\t\t\"alias\": \"Nicolás Danelon\",\r\n\t\t\"number\": \"1144445555\",\r\n\t\t\"imageurl\": \"https://algunsitiodeimagenes/nico.png\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/contacts/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"contacts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/messages/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"messages",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Message by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/messages/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"messages",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Message",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/messages/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"messages",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"contactFrom\": \"2\",\r\n\t\t\"contactTo\": \"3\",\r\n\t\t\"text\": \"Ahí te llamo!\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/messages/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"messages",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Message",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"text\": \"Hola! Como estas?\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/messages/1",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"messages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Calls",
+			"item": [
+				{
+					"name": "Calls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/calls/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"calls",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/calls/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"calls",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Call",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/calls/2",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"calls",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Call",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"contactFrom\": \"2\",\r\n\t\t\"contactTo\": \"3\",\r\n\t\t\"text\": \"Ahí te llamo!\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/calls/",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"calls",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{root}}",
+					"host": [
+						"{{root}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
