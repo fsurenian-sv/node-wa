@@ -1,0 +1,30 @@
+[
+	{
+		"id": "1",
+		"contactFrom": "2",
+		"contactTo": "3",
+		"date": "2020-11-02T13:24:35",
+		"text": "Hola! Como va?"
+	},
+	{
+		"id": "2",
+		"contactFrom": "3",
+		"contactTo": "2",
+		"date": "2020-11-02T13:24:45",
+		"text": "Todo bien, vos?"
+	},
+	{
+		"id": "3",
+		"contactFrom": "2",
+		"contactTo": "3",
+		"date": "2020-11-02T13:24:50",
+		"text": "Bien bien... te puedo llamar?"
+	},
+	{
+		"id": "4",
+		"contactFrom": "3",
+		"contactTo": "2",
+		"date": "2020-11-02T13:24:55",
+		"text": "Sip!"
+	}
+]
