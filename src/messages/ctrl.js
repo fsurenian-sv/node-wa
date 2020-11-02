@@ -37,7 +37,7 @@ export const createMessage = (req, res) => {
 
 	const newMessage = new Message(contactFrom, contactTo, text);
 
-	console.log(`${feature} Creating message for ${newMessage.name}`);
+	console.log(`${feature} Creating message`);
 	res.status(201).json({ success: true, payload: newMessage });
 };
 
